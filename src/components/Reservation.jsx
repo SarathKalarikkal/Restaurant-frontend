@@ -19,7 +19,7 @@ function Reservation() {
         try {
             
             // If user is not reserved, proceed with the reservation
-            const { data } = await axios.post("http://localhost:3001/api/reservation/send", formData, {
+            const { data } = await axios.post("https://restaurant-backend-vxs0.onrender.com", formData, {
                 headers: {
                     "Content-Type": 'application/json'
                 },
